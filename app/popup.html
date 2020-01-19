@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- build:css styles/popup-vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+    <title>Extension Wallet</title>
+  </head>
+  <body style='width:300px;height:100%;'>
+    <img src="/images/bitcoin.png" alt="" style='height:100%;width:100%'>
+    <center><h1>Extension Wallet</h1>
+      <div><b>Public Key: </b><div id="pubKey"></div></div><br />
+      <div><b>Balance: </b><div id="balanceAmount"></div></div>
+      <div id="wrapper">
+      </div>
+        <button id="createWalletButton">Load Wallet</button>
+        <input id="toAddress" placeholder="Message" style="width:85%;text-align:center;"></input><br /><br />
+        <input id="sendAmount" placeholder="Amount to send" style="text-align:center;"></input><br /><br />
+        <button id="buildTransaction">Make Transaction</button><br /><br />
+        <button id="createMessage">Create Message</button><br />
+        <button id="transaction">Sign Message</button><br />
+        <div id="confirm"><b>Are you sure you want to send 1.02 BTC to asd1kmwegnignekgskni34ngi3ngdg?</b></div><br />
+        <button id="transactionConfirmed">Submit</button><button id="transactionCancelled">Cancel</button><br /><br />
+
+      <i>Developed by info@FinTechConsultingGroup.com</i>
+
+      <!-- <input placeholder="Enter private key"></input>
+      <input placeholder="Select amount"></input>
+      <button id="checkPage">Make a transaction!</button> -->
+    </center>
+    <!-- build:js scripts/popup-vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/popup.js -->
+    <script src="scripts/popup.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
